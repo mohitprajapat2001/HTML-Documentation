@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Inputs</title>
+</head>
+
+<body>
+    <h1>HTML Form</h1>
+    <form action="">
+        <!-- Button Start -->
+        <fieldset>
+            <legend>Button group</legend>
+            <input type="button" value="Button 1" />
+            <input type="button" value="Button 2" />
+            <input type="button" value="Button 3" />
+        </fieldset>
+        <!-- Button Start -->
+        <!-- Checkbox Start -->
+        <fieldset>
+            <legend>Choose your monster's features:</legend>
+
+            <div>
+                <input type="checkbox" id="scales" name="scales" checked />
+                <label for="scales">Scales</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="horns" name="horns" />
+                <label for="horns">Horns</label>
+            </div>
+        </fieldset>
+        <!-- Checkbox End -->
+        <!-- Color Start -->
+        <fieldset>
+            <legend>Choose your favorite Color:</legend>
+            <div>
+                <input type="color" id="head" name="head" value="#e66465" />
+                <label for="head"> Head</label>
+            </div>
+
+            <div>
+                <input type="color" id="body" name="body" value="#f6b73c" />
+                <label for="body">Body</label>
+            </div>
+
+        </fieldset>
+        <!-- Color End -->
+        <!-- Date Start -->
+        <fieldset>
+            <legend>Now Let's Try Date Picker:</legend>
+
+            <div>
+                <label for="start">Start date:</label>
+
+                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
+            </div>
+
+        </fieldset>
+        <!-- Date End -->
+        <!-- Datetime-Local Start -->
+        <fieldset>
+            <legend>Datetime local:</legend>
+
+            <div>
+                <label for="scales">Scales</label>
+                <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+                    min="2018-06-07T00:00" max="2018-06-14T00:00" />
+            </div>
+
+        </fieldset>
+        <!-- Datetime-Local End -->
+        <!-- Email Start -->
+        <fieldset>
+            <legend>Choose your monster's features:</legend>
+
+            <div>
+                <label for="email">Enter your example.com email:</label>
+                <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+            </div>
+
+        </fieldset>
+        <!-- Email End -->
+        <!-- File Start -->
+        <fieldset>
+            <legend>Choose your Profile Picture:</legend>
+
+            <div>
+                <label for="avatar">Choose a profile picture:</label>
+
+                <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+            </div>
+
+        </fieldset>
+        <!-- File End -->
+        <!-- Hidden Start -->
+        <fieldset>
+            <legend>Hidden Input:</legend>
+
+            <div>
+                <input type="hidden" name="id">
+            </div>
+        </fieldset>
+        <!-- Hiddent End -->
+        <!-- Image Start -->
+        <fieldset>
+            <legend>Image:</legend>
+
+            <div>
+                <input type="image" id="image" alt="Login" src="../static/7.jpg" />
+            </div>
+        </fieldset>
+        <!-- Image End -->
+        <!-- Month Start -->
+        <fieldset>
+            <legend>Month Input:</legend>
+
+            <div>
+                <label for="start">Start month:</label>
+                <input type="month" id="start" name="start" min="2018-03" value="2018-05" />
+            </div>
+        </fieldset>
+        <!-- Month End -->
+        <!-- Number Start -->
+        <fieldset>
+            <legend>Number: </legend>
+
+            <div>
+                <label for="pass">Password (8 characters minimum):</label>
+                <input type="password" id="pass" name="password" minlength="8" required />
+            </div>
+        </fieldset>
+        <!-- Number End -->
+        <!-- Radio Start -->
+        <fieldset>
+            <legend>Radio Input:</legend>
+
+            <div>
+                <input type="radio" id="huey" name="drone" value="huey" checked />
+                <label for="huey">Huey</label>
+            </div>
+
+            <div>
+                <input type="radio" id="dewey" name="drone" value="dewey" />
+                <label for="dewey">Dewey</label>
+            </div>
+
+            <div>
+                <input type="radio" id="louie" name="drone" value="louie" />
+                <label for="louie">Louie</label>
+            </div>
+        </fieldset>
+        <!-- Radio End -->
+        <!-- Range Start -->
+        <fieldset>
+            <legend>Radio Input:</legend>
+            <div>
+                <input type="range" id="volume" name="volume" min="0" max="11" />
+                <label for="volume">Volume</label>
+            </div>
+
+            <div>
+                <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
+                <label for="cowbell">Cowbell</label>
+            </div>
+        </fieldset>
+        <!-- Range End -->
+
+        <!-- Reset Start -->
+        <fieldset>
+            <legend>Reset Input:</legend>
+            <div>
+                <label for="id">User ID:</label>
+                <input type="text" id="id" name="id" />
+
+                <input type="reset" value="Reset" />
+            </div>
+        </fieldset>
+        <!-- Reset End -->
+        <!-- Search Start -->
+        <fieldset>
+            <legend>Search Input:</legend>
+            <div>
+                <label for="site-search">Search the site:</label>
+                <input type="search" id="site-search" name="q" />
+
+                <button>Search</button>
+            </div>
+        </fieldset>
+        <!-- Search End -->
+        <!-- Tel Start -->
+        <fieldset>
+            <legend>Tel Input:</legend>
+            <div>
+                <label for="phone">
+                    Enter your phone number:<br />
+                    <small>Format: 123-456-7890</small>
+                </label>
+
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            </div>
+        </fieldset>
+        <!-- Tel End -->
+        <!-- Text Start -->
+        <fieldset>
+            <legend>Text Input:</legend>
+            <div>
+                <label for="name">Name (4 to 8 characters):</label>
+                <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+            </div>
+        </fieldset>
+        <!-- Text End -->
+        <!-- Time Start -->
+        <fieldset>
+            <legend>Time Input:</legend>
+            <div>
+                <label for="appt">Choose a time for your meeting:</label>
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+                <small>Office hours are 9am to 6pm</small>
+            </div>
+        </fieldset>
+        <!-- Time End -->
+        <!-- Time Start -->
+        <fieldset>
+            <legend>Time Input:</legend>
+            <div>
+                <label for="url">Enter an https:// URL:</label>
+                <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+                    required />
+            </div>
+        </fieldset>
+        <!-- Time End -->
+        <!-- Select Start -->
+        <fieldset>
+            <legend>Select Tag:</legend>
+            <div>
+                <label for="ice-cream-flavors">Choose a flavor:</label>
+                <select id="ice-cream-flavors">
+                    <option value="Chocolate" selected>Chocolate</option>
+                    <option value="Coconut">Coconut</option>
+                    <option value="Mint">Mint</option>
+                    <option value="Strawberry">Strawberry</option>
+                    <option value="Vanilla">Vanilla</option>
+                </select>
+            </div>
+        </fieldset>
+        <!-- Select End -->
+        <!-- Meter Start -->
+        <fieldset>
+            <legend>Meter Tag:</legend>
+            <div>
+                <meter value="100">Meter Tag</meter>
+            </div>
+        </fieldset>
+        <!-- Meter End -->
+        <!-- Progress Start -->
+        <fieldset>
+            <legend>Progress Tag:</legend>
+            <div>
+                <progress id="file" max="100" value="70">70%</progress>
+            </div>
+        </fieldset>
+        <!-- Progress End -->
+        <!-- Week Start -->
+        <fieldset>
+            <legend>Week Input:</legend>
+            <div>
+                <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required />
+
+            </div>
+        </fieldset>
+        <!-- Week End -->
+        <!-- Submit Start -->
+        <fieldset>
+            <legend>Submit Input:</legend>
+            <div>
+                <input type="submit" value="submit" />
+            </div>
+        </fieldset>
+        <!-- Submit End -->
+
+    </form>
+</body>
+
+</html>
