@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM HTML</title>
+  </head>
+  <body>
+    <h1>FORMS HTML</h1>
+    <form method="GET">
+      <fieldset>
+        <legend>Email Field</legend>
+        <label for="emailField">Email: </label>
+        <input type="email" id="emailField" placeholder="Enter Your Email Address" value="abc@abc.com" disabled/>
+      </fieldset>
+      <fieldset>
+        <legend>Password Field</legend>
+        <label for="passwordField">Password</label>
+        <input type="password" name="" id="passwordField" pattern="[A-Za-z]{5}" required />
+      </fieldset>
+      <fieldset>
+        <legend>Text Field</legend>
+        <label for="textField">Text: </label>
+        <input type="text" id="textField" placeholder="Enter Your Text/Subject" pattern="[A-Za-z]{3}" title="Enter Countrey Code in 3 Letter"/>
+      </fieldset>
+      <fieldset>
+        <legend>Number Field</legend>
+        <label for="numberField">Text: </label>
+        <input type="number" id="numberField" placeholder="Enter Your Number" value="123" readonly/>
+      </fieldset>
+      <fieldset>
+      <legend>Radio Field</legend>
+      <label for="radioFieldMale">Male: </label>
+      <input type="radio" id="radioFieldMale" placeholder="Enter Your Number" name="gender" value="Male"/>
+      
+      <label for="radioFieldFemale">Female: </label>
+      <input type="radio" id="radioFieldFemale" placeholder="Enter Your Number" name="gender" value="Female"/>
+    </fieldset>
+      <fieldset>
+        <legend>Checkbox Field</legend>
+        <label for="checkboxField">Hobbies</label>
+        <input type="checkbox" id="checkboxField" value="Male" /> Gaming
+        <input type="checkbox" id="checkboxField" />Music   
+      </fieldset>
+      <fieldset>
+        <legend>Tel Field</legend>
+        <label for="telField">Telephone</label>
+        <input type="tel" id="telField" pattern="[6-9]{3}[0-9]{9}" title="Enter Phone Number" />
+      </fieldset>
+
+      <input type="color" name="" id="" />
+      <input type="date" name="" id="" />
+      <input type="datetime" name="" id="" />
+      <input type="datetime-local" name="" id="" />
+      <input type="image" src="" alt="" />
+      <input type="file" name="" id="" />
+      <input type="week" name="" id="" />
+      <input type="search" name="" id="" />
+
+
+
+      <input type="range" name="" id="" value="500" max="1000" min="100"/>
+
+
+      <textarea name="" id="" cols="100" rows="10   "></textarea>
+
+
+      <select name="city" id="">
+        <option value="Mumbai">Mumbai</option>
+        <option value="Jaipur" >Jaipur</option>
+        <option value="Ahmedabad"selected>Ahmedabad</option>
+        <option value="Delhi">Delhi</option>
+      </select>
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
